@@ -1,0 +1,36 @@
+title: Aaron Carson
+email: hello@aaroncarson.co.uk
+author: Aaron Carson
+url: "https://aaroncarson.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: acar321
+github_username:  caraar12345
+
+# Build settings
+permalink: :title/
+sass:
+  sass_dir: assets/css/
+
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
